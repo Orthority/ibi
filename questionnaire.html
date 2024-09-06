@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Questionnaire</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Research Questionnaire</h1>
+        <p>Dear Respondents,</p>
+        <p>I am an undergraduate student of the Department of Nursing Science at Elizade University, Ilara-Mokin. I am carrying out a study on the <strong>perceived impact of substance abuse on academic performance among students at Elizade University</strong>.  </br>I humbly request that you kindly answer the following questions honestly. PLEASE DO NOT WRITE YOUR NAME. This is to protect your information and ensure that your responses remain confidential. All information given will be kept safe and used solely for the purpose of this study.</p>
+        <p>Sincerely, <br>[Dada Fatima Ibironke]</p>
+
+        <form action="submit_questionnaire.php" method="POST">
+    <h2>SECTION A: Socio-Demographic Data</h2>
+    <table border="1">
+        <tr>
+            <td>Age as at last birthday:</td>
+            <td><input type="number" name="age" required></td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td>
+                <input type="radio" name="gender" value="Male" required> Male
+                <input type="radio" name="gender" value="Female" required> Female
+            </td>
+        </tr>
+        <tr>
+            <td>Marital Status:</td>
+            <td>
+                <input type="radio" name="marital_status" value="Single" required> Single
+                <input type="radio" name="marital_status" value="Married" required> Married
+            </td>
+        </tr>
+        <tr>
+            <td>Religion:</td>
+            <td>
+                <input type="radio" name="religion" value="Christianity" required> Christianity
+                <input type="radio" name="religion" value="Islam" required> Islam
+                <input type="radio" name="religion" value="Traditional" required> Traditional
+                <input type="text" name="religion_other" placeholder="Others (specify)">
+            </td>
+        </tr>
+        <tr>
+            <td>Tribe:</td>
+            <td>
+                <input type="radio" name="tribe" value="Yoruba" required> Yoruba
+                <input type="radio" name="tribe" value="Igbo" required> Igbo
+                <input type="radio" name="tribe" value="Hausa" required> Hausa
+                <input type="text" name="tribe_other" placeholder="Others (specify)">
+            </td>
+        </tr>
+        <tr>
+            <td>Monthly Income (in Naira):</td>
+            <td><input type="number" name="monthly_income" required></td>
+        </tr>
+        <tr>
+            <td>Department/Faculty:</td>
+            <td><input type="text" name="department" required></td>
+        </tr>
+    </table>
+
+    <!-- SECTION B: Prevalence of Substance Abuse -->
+    <h2>SECTION B: Prevalence of Substance Abuse</h2>
+    <table border="1">
+        <tr>
+            <th>S/N</th>
+            <th>Question</th>
+            <th>Yes</th>
+            <th>No</th>
+            <th>I don’t know</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Have you ever abused a substance?</td>
+            <td><input type="radio" name="substance_abuse_1" value="Yes" required></td>
+            <td><input type="radio" name="substance_abuse_1" value="No" required></td>
+            <td><input type="radio" name="substance_abuse_1" value="I don’t know" required></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Have you taken any substance in the last 3 months?</td>
+            <td><input type="radio" name="substance_abuse_2" value="Yes" required></td>
+            <td><input type="radio" name="substance_abuse_2" value="No" required></td>
+            <td><input type="radio" name="substance_abuse_2" value="I don’t know" required></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Have you been using any of the substances listed above for the last 3 months? If yes, list them:</td>
+            <td colspan="3"><input type="text" name="substance_list"></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Do you take it daily?</td>
+            <td><input type="radio" name="substance_abuse_4" value="Yes" required></td>
+            <td><input type="radio" name="substance_abuse_4" value="No" required></td>
+            <td><input type="radio" name="substance_abuse_4" value="I don’t know" required></td>
+        </tr>
+        <!-- Continue with other substance abuse questions in the same format -->
+    </table>
+
+    <!-- SECTION C: Impact of Substance Abuse on Academic Performance -->
+    <h2>SECTION C: Impact of Substance Abuse on Academic Performance</h2>
+    <table border="1">
+        <tr>
+            <th>S/N</th>
+            <th>Question</th>
+            <th>Yes</th>
+            <th>No</th>
+            <th>I don’t know</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>I believe substance abuse has affected my academic performance negatively</td>
+            <td><input type="radio" name="academic_performance_1" value="Yes" required></td>
+            <td><input type="radio" name="academic_performance_1" value="No" required></td>
+            <td><input type="radio" name="academic_performance_1" value="I don’t know" required></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>I find it difficult to concentrate in class due to substance use</td>
+            <td><input type="radio" name="academic_performance_2" value="Yes" required></td>
+            <td><input type="radio" name="academic_performance_2" value="No" required></td>
+            <td><input type="radio" name="academic_performance_2" value="I don’t know" required></td>
+        </tr>
+        <!-- Continue with other academic impact questions in the same format -->
+    </table>
+
+    <!-- SECTION D: Factors that Contribute to Substance Abuse -->
+    <h2>SECTION D: Factors that Contribute to Substance Abuse</h2>
+    <table border="1">
+        <tr>
+            <th>S/N</th>
+            <th>Question</th>
+            <th>Always</th>
+            <th>Sometimes</th>
+            <th>Seldom</th>
+            <th>Never</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>I use substances to gain confidence to face the public</td>
+            <td><input type="radio" name="contributing_factor_1" value="Always" required></td>
+            <td><input type="radio" name="contributing_factor_1" value="Sometimes" required></td>
+            <td><input type="radio" name="contributing_factor_1" value="Seldom" required></td>
+            <td><input type="radio" name="contributing_factor_1" value="Never" required></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>I take substances to improve my memory before exams</td>
+            <td><input type="radio" name="contributing_factor_2" value="Always" required></td>
+            <td><input type="radio" name="contributing_factor_2" value="Sometimes" required></td>
+            <td><input type="radio" name="contributing_factor_2" value="Seldom" required></td>
+            <td><input type="radio" name="contributing_factor_2" value="Never" required></td>
+        </tr>
+        <!-- Continue with other contributing factor questions in the same format -->
+    </table>
+
+    <br>
+    <label>Please provide any additional comments on how substance abuse has impacted your academic performance:</label><br>
+    <textarea name="additional_comments" rows="5" cols="50"></textarea><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+</html>
